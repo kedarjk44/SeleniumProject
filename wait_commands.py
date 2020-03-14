@@ -15,20 +15,15 @@ print(driver.current_url)
 assert driver.current_url == "https://www.expedia.com/", "Error occurred"
 
 driver.find_element_by_id("tab-flight-tab-hp").click()
-# from_flight_list = ["SFO", "NYC", "LA", "LV"]
-# to_flighs = ["SFO", "NYC", "LA", "LV"]
-# for i in range(len(from_flight_list)):
-#     from_flight = from_flight_list[i]
 driver.find_element_by_id("flight-origin-hp-flight").send_keys("SFO")
 
 driver.find_element_by_id("flight-destination-hp-flight").send_keys("NYC")
 
 driver.find_element_by_id("flight-departing-hp-flight").clear()
-driver.find_element_by_id("flight-departing-hp-flight").send_keys("02/18/2020")
-# driver.f
+driver.find_element_by_id("flight-departing-hp-flight").send_keys("03/15/2020")
 
 driver.find_element_by_id("flight-returning-hp-flight").clear()
-driver.find_element_by_id("flight-returning-hp-flight").send_keys("02/19/2020")
+driver.find_element_by_id("flight-returning-hp-flight").send_keys("03/18/2020")
 
 driver.find_element_by_id("flight-add-hotel-checkbox-flp").click()
 
