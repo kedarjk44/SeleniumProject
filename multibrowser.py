@@ -3,12 +3,14 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 driver = webdriver.Chrome(executable_path="C:\setups\chromedriver.exe")
-# driver.get("http://newtours.demoaut.com/")
-# print(driver.title)
-# print(driver.current_url)
+driver.get("http://newtours.demoaut.com/")
+print(driver.title)
+print(driver.current_url)
 # print(driver.page_source)
-# driver.close()
+driver.close()
+driver.quit()
 
+driver = webdriver.Chrome(executable_path="C:\setups\chromedriver.exe")
 driver.get("http:/demo.automationtesting.in/Windows.html")
 print(driver.title)
 print(driver.current_url)
